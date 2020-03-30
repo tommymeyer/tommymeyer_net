@@ -2799,7 +2799,7 @@ body.is-ie .wrapper.fullscreen {
   left: 50%;
   margin-left: -8px;
   width: 0;
-  border-top: 8px solid rgba(109, 94, 174, 0.9);
+  border-top: 8px solid rgba(109, 94, 174, 0.8);
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
   content: " ";
@@ -2813,7 +2813,7 @@ body.is-ie .wrapper.fullscreen {
   width: 0;
   border-radius: 5px;
   background-color: #000;
-  background-color: rgba(109, 94, 174, 0.9);
+  background-color: rgba(109, 94, 174, 0.8);
   color: #fff;
   content: attr(data-tooltip);
   text-align: center;
@@ -2828,10 +2828,10 @@ body.is-ie .wrapper.fullscreen {
   opacity: 1;
 }
 .wrapper.fade-up > .inner [data-tooltip]:hover span {
-  bottom: 150%;
+  bottom: 38px;
 }
 .wrapper.fade-up > .inner [data-tooltip]:hover:after {
-  bottom: 190%;
+  bottom: 46px;
 }
 .wrapper.fade-up.inactive > .inner {
   opacity: 0;
