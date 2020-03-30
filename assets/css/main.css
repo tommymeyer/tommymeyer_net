@@ -2780,7 +2780,12 @@ body.is-ie .wrapper.fullscreen {
   opacity: 1;
 }
 .wrapper.fade-up > .inner .icons {
-  margin-left: 20px;
+  margin-left: 25px;
+}
+@media screen and (max-width: 1680px) {
+  .wrapper.fade-up > .inner .icons {
+    margin-left: 20px;
+  }
 }
 .wrapper.fade-up > .inner [data-tooltip] {
   position: relative;
@@ -3345,5 +3350,8 @@ body.is-preload #sidebar nav ul li {
   }
 }
 /*# sourceMappingURL=main.css.map */
+* {
+  transition: all 250ms ease;
+}
 
 /*# sourceMappingURL=main.css.map */

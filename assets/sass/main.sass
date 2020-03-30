@@ -2728,7 +2728,9 @@ body.is-ie .wrapper.fullscreen
     opacity: 1
 
     .icons
-      margin-left: 20px
+      margin-left: 25px
+      @media screen and (max-width: 1680px)
+        margin-left: 20px
 
     [data-tooltip]
       position: relative
@@ -3280,3 +3282,6 @@ body.is-preload #sidebar
     font-size: 1em
 
 /*# sourceMappingURL=main.css.map
+
+*
+  transition: all 250ms ease
