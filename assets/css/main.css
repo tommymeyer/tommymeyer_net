@@ -1502,6 +1502,7 @@ button, .button {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  color: rgba(255, 255, 255, 0.55);
 }
 button:hover, .button:hover {
   color: #ffffff;
