@@ -2739,7 +2739,6 @@ body.is-ie .wrapper.fullscreen
       cursor: pointer
 
       span, &:after
-        visibility: hidden
         opacity: 0
         pointer-events: none
         transition: visibility 500ms ease, opacity 250ms ease, bottom 250ms ease
@@ -2776,12 +2775,11 @@ body.is-ie .wrapper.fullscreen
 
       &:hover
         &:after, span
-          visibility: visible
           opacity: 1
         span
-          bottom: 26px
+          bottom: 28px
         &:after
-          bottom: 34px
+          bottom: 36px
 
   &.inactive > .inner
     opacity: 0
@@ -3285,4 +3283,4 @@ body.is-preload #sidebar
 /*# sourceMappingURL=main.css.map
 
 *
-  transition: all 250ms ease
+  transition: all 500ms ease
