@@ -87,6 +87,15 @@ html
 
 
 // Variables
+$purple: #312450
+$blue: #85b4ff
+$yellow: #ffd882
+$green: #90EE90
+$lite-purple: #6d5eae
+
+
+.disabled-link
+  pointer-events: none
 
 
 body
@@ -2477,11 +2486,17 @@ body.is-ie .spotlights > section
   >
     .image
       background-position: center center
-      background-size: cover
+      background-size: contain
+      background-repeat: no-repeat
       border-radius: 0
+      color: rgba(0, 0, 0, 0)
       display: block
       position: relative
       width: 35em
+      &.image-one
+        background-image: url("../../images/TrackingPage.png")
+        &:hover
+          background-image: url("../../images/gifs/TrackingPage.gif")
 
       img
         border-radius: 0
@@ -2529,6 +2544,15 @@ body.is-ie .spotlights > section
         -ms-transition: opacity 1s ease, -ms-transform 1s ease
         transition: opacity 1s ease, transform 1s ease
         opacity: 1
+        a
+          border-bottom: none
+          >
+            h2
+              border-bottom: 2px solid transparent
+              display: inline-block
+              transition: border 300ms ease
+              &:hover
+                border-bottom: 2px solid white
 
   &:nth-child(2)
     background-color: rgba(0, 0, 0, 0.05)
@@ -2551,7 +2575,7 @@ body.is-preload .spotlights > section > .image:before
 
 @media screen and (max-width: 1680px)
   .spotlights > section > .content
-    padding: 4em 4em 2em 4em
+    padding: 4em 3em 2em 3em
 
 @media screen and (max-width: 980px)
   .spotlights > section

@@ -88,6 +88,10 @@ html {
   box-sizing: inherit;
 }
 
+.disabled-link {
+  pointer-events: none;
+}
+
 body {
   background: #312450;
   color: rgba(255, 255, 255, 0.55);
@@ -2498,11 +2502,19 @@ body.is-ie .spotlights > section {
 
 .spotlights > section > .image {
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 0;
+  color: rgba(0, 0, 0, 0);
   display: block;
   position: relative;
   width: 35em;
+}
+.spotlights > section > .image.image-one {
+  background-image: url("../../images/TrackingPage.png");
+}
+.spotlights > section > .image.image-one:hover {
+  background-image: url("../../images/gifs/TrackingPage.gif");
 }
 .spotlights > section > .image img {
   border-radius: 0;
@@ -2551,6 +2563,17 @@ body.is-ie .spotlights > section {
   transition: opacity 1s ease, transform 1s ease;
   opacity: 1;
 }
+.spotlights > section > .content > .inner a {
+  border-bottom: none;
+}
+.spotlights > section > .content > .inner a > h2 {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  transition: border 300ms ease;
+}
+.spotlights > section > .content > .inner a > h2:hover {
+  border-bottom: 2px solid white;
+}
 .spotlights > section:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -2575,7 +2598,7 @@ body.is-preload .spotlights > section > .image:before {
 
 @media screen and (max-width: 1680px) {
   .spotlights > section > .content {
-    padding: 4em 4em 2em 4em;
+    padding: 4em 3em 2em 3em;
   }
 }
 @media screen and (max-width: 980px) {
