@@ -2514,7 +2514,7 @@ body.is-ie .spotlights > section {
   background-image: url("../../images/TrackingPage.png");
 }
 .spotlights > section > .image.image-one:hover {
-  background-image: url("../../images/gifs/TrackingPage.gif");
+  background-image: url("https://gdurl.com/hi8e");
 }
 .spotlights > section > .image img {
   border-radius: 0;
@@ -2565,6 +2565,7 @@ body.is-ie .spotlights > section {
 }
 .spotlights > section > .content > .inner a {
   border-bottom: none;
+  display: inline-block;
 }
 .spotlights > section > .content > .inner a > h2 {
   border-bottom: 2px solid transparent;
