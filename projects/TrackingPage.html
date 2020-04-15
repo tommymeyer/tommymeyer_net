@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+  Hyperspace by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  <title>Tommy Meyer Project - Tuft & Needle Tracking Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+  <!-- Header -->
+  <header id="header">
+    <a href="../index.html" class="title">Tommy Meyer</a>
+    <nav>
+      <ul>
+        <li><a href="../index.html#one">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="inner">
+        <h1 class="major">Tuft & Needle Tracking Page</h1>
+        <span class="image fit"><a href="https://www.tuftandneedle.com/tracking/?email=tlmeyer942@gmail.com&slug=217e1e6a1ecc" target="_blank"><img src="../images/TrackingPage.png" alt="" /></a></span>
+        <p>This was my first individual React project, meaning I didn't have a pair working with me.</p>
+
+        <p>I used <code>componentDidMount()</code> to to construct the URL, set the initial State, and update the text message opt in/out box. To make the <code>POST</code> request I used <a href="https://www.npmjs.com/package/axios" target="_blank" rel="noopener noreferrer">Axios</a>. Finally, I used <a href="https://www.npmjs.com/package/date-fns" target="_blank" rel="noopener noreferrer">date-fns</a> to convert and format timestamps in different ways in multiple locations on the page.</p>
+
+        <p>One challenging aspect about this project was pinning down a completion date. I had to move the date back a few times. This was due to my inexperience as well as me not being present during the planning portion of it. Another challenge was in creating the tabs and dropdown components. They were recycled from a company UI Kit that hadn't been "Reactified" yet so that job landed in my lap.</p>
+
+        <p>The issue was in my making the callback to the active index. The dropdown was slightly different from the tabs due to it being a <code>&lt;select&gt;</code> element and having <code>&lt;option&gt;</code> elements inside.</p>
+
+        <p>I also had to create a Picture Component based on a UI Kit mixin utilizing the <code>&lt;picture&gt;</code> element. Using Props I was able to set an image path and alt attribute text.</p>
+
+        <p>I learned a lot during this project and if I had to take one thing away from this project it would be to not give a firm completion date until I am at least 90% sure it's right. Along those lines, making sure I try to ask questions until I understand as much as possible before giving an estimation.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="wrapper alt">
+    <div class="inner">
+      <ul class="menu">
+        <li>&copy; 2020 Tommy Meyer. All rights reserved.</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

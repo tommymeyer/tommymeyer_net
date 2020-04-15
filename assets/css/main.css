@@ -2186,7 +2186,16 @@ input[type=radio] + label:before {
   width: 100%;
 }
 .image.fit img {
-  width: 100%;
+  float: right;
+  margin: 0 0 18px 18px;
+  width: 60%;
+}
+@media screen and (max-width: 736px) {
+  .image.fit img {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
 }
 .image.main {
   display: block;
@@ -2510,11 +2519,19 @@ body.is-ie .spotlights > section {
   position: relative;
   width: 35em;
 }
+@media screen and (max-width: 736px) {
+  .spotlights > section > .image {
+    background-position: center top;
+  }
+}
 .spotlights > section > .image.image-one {
+  background-color: #fff;
   background-image: url("../../images/TrackingPage.png");
 }
-.spotlights > section > .image.image-one:hover {
-  background-image: url("https://gdurl.com/hi8e");
+@media screen and (max-width: 736px) {
+  .spotlights > section > .image.image-one {
+    background-color: unset;
+  }
 }
 .spotlights > section > .image img {
   border-radius: 0;
@@ -2633,7 +2650,8 @@ body.is-preload .spotlights > section > .image:before {
     min-height: 15em;
   }
   .spotlights > section > .content {
-    padding: 3em 2em 1em 2em;
+    padding: 0 2em 1em 2em;
+    margin-top: calc(70vw - 50vh);
   }
 }
 .table-wrapper {

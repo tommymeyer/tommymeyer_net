@@ -2155,7 +2155,13 @@ input
     width: 100%
 
     img
-      width: 100%
+      float: right
+      margin: 0 0 18px 18px
+      width: 60%
+      @media screen and (max-width: 736px)
+        float: none
+        margin: 0
+        width: 100%
 
   &.main
     display: block
@@ -2493,10 +2499,13 @@ body.is-ie .spotlights > section
       display: block
       position: relative
       width: 35em
+      @media screen and (max-width: 736px)
+        background-position: center top
       &.image-one
+        background-color: #fff
         background-image: url("../../images/TrackingPage.png")
-        &:hover
-          background-image: url("https://gdurl.com/hi8e")
+        @media screen and (max-width: 736px)
+          background-color: unset
 
       img
         border-radius: 0
@@ -2609,7 +2618,8 @@ body.is-preload .spotlights > section > .image:before
       min-height: 15em
 
     .content
-      padding: 3em 2em 1em 2em
+      padding: 0 2em 1em 2em
+      margin-top: calc(70vw - 50vh)
 
 // Table
 
