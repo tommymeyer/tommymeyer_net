@@ -2616,9 +2616,13 @@ body.is-preload .spotlights > section > .image:before {
 
 @media screen and (max-width: 1680px) {
   .spotlights > section > .content {
+    padding: 4em 3em 2em 3em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .spotlights > section > .content {
     margin: auto;
     max-width: 710px;
-    padding: 4em 3em 2em 3em;
   }
 }
 @media screen and (max-width: 980px) {
@@ -2762,6 +2766,8 @@ table.alt tfoot {
 }
 @media screen and (max-width: 1280px) {
   .wrapper > .inner {
+    max-width: 710px;
+    margin: auto;
     width: 100%;
   }
 }
@@ -2803,8 +2809,6 @@ body.is-ie .wrapper.fullscreen {
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
   opacity: 1;
-  max-width: 710px;
-  margin: auto;
 }
 .wrapper.fade-up > .inner .icons {
   margin-left: 25px;
@@ -3359,9 +3363,9 @@ body.is-preload #sidebar nav ul li {
   font-size: 1.25em;
 }
 
-@media screen and (max-width: 736px) {
-  #intro {
-    background-size: auto;
+@media screen and (max-width: 1280px) {
+  #intro .inner {
+    margin: unset;
   }
 }
 @media screen and (max-width: 980px) {
@@ -3370,6 +3374,9 @@ body.is-preload #sidebar nav ul li {
   }
 }
 @media screen and (max-width: 736px) {
+  #intro {
+    background-size: auto;
+  }
   #intro p {
     font-size: 1em;
   }

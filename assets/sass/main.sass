@@ -2585,9 +2585,12 @@ body.is-preload .spotlights > section > .image:before
 
 @media screen and (max-width: 1680px)
   .spotlights > section > .content
+    padding: 4em 3em 2em 3em
+
+@media screen and (max-width: 1280px)
+  .spotlights > section > .content
     margin: auto
     max-width: 710px
-    padding: 4em 3em 2em 3em
 
 @media screen and (max-width: 980px)
   .spotlights > section
@@ -2730,6 +2733,8 @@ table
 
 @media screen and (max-width: 1280px)
   .wrapper > .inner
+    max-width: 710px
+    margin: auto
     width: 100%
 
 @media screen and (max-width: 736px)
@@ -2765,8 +2770,6 @@ body.is-ie .wrapper.fullscreen
     -ms-transition: opacity 1s ease, -ms-transform 1s ease
     transition: opacity 1s ease, transform 1s ease
     opacity: 1
-    max-width: 710px
-    margin: auto
 
     .icons
       margin-left: 25px
@@ -3306,17 +3309,20 @@ body.is-preload #sidebar
     color: #ffffff
     font-size: 1.25em
 
-@media screen and (max-width: 736px)
+@media screen and (max-width: 1280px)
   #intro
-    background-size: auto
+    .inner
+      margin: unset
 
 @media screen and (max-width: 980px)
   #intro p br
     display: none
 
 @media screen and (max-width: 736px)
-  #intro p
-    font-size: 1em
+  #intro
+    background-size: auto
+    p
+      font-size: 1em
 
 //# sourceMappingURL=main.css.map
 
