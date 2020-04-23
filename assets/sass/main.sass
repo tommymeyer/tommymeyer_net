@@ -1,6 +1,7 @@
 @charset "UTF-8"
 
 @import "fontawesome-all.min.css"
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bevan&family=BioRhyme:wght@700;800&family=Bree+Serif&family=Cherry+Swash:wght@700&family=Kelly+Slab&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Spicy+Rice&family=Ubuntu:wght@400;500;700&display=swap')
 
 
 // Hyperspace by HTML5 UP
@@ -86,12 +87,27 @@ html
     box-sizing: inherit
 
 
+
+
 // Variables
 $purple: #312450
 $blue: #85b4ff
 $yellow: #ffd882
 $green: #90EE90
 $lite-purple: #6d5eae
+
+$righteous: 'Righteous', cursive
+$kelly: 'Kelly Slab', cursive
+$poppins: 'Poppins', sans-serif
+$ubuntu: 'Ubuntu', sans-serif
+$bree: 'Bree Serif', serif
+$audiowide: 'Audiowide', cursive
+$bevan: 'Bevan', cursive
+$spicy-rice: 'Spicy Rice', cursive
+$biorhyme: 'BioRhyme', serif
+$cherry: 'Cherry Swash', cursive
+
+
 
 
 .disabled-link
@@ -2499,13 +2515,14 @@ body.is-ie .spotlights > section
       display: block
       position: relative
       width: 35em
+      background-color: #fff
       @media screen and (max-width: 736px)
         background-position: center top
+        background-color: unset
       &.image-one
-        background-color: #fff
-        background-image: url("../../images/TrackingPage.png")
-        @media screen and (max-width: 736px)
-          background-color: unset
+        background-image: url("../../images/TrackingPage.jpg")
+      &.image-two
+        background-image: url("../../images/StoresSite.jpg")
 
       img
         border-radius: 0
