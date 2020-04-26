@@ -2249,6 +2249,11 @@ dl dd {
   margin-left: 2em;
 }
 
+.project-article ul.actions {
+  justify-content: center;
+  padding: 1em;
+}
+
 ul.actions {
   display: -moz-flex;
   display: -webkit-flex;
@@ -2257,7 +2262,6 @@ ul.actions {
   cursor: default;
   list-style: none;
   margin-left: -1em;
-  padding-left: 0;
 }
 ul.actions li {
   padding: 0 0 0 1em;
@@ -2350,7 +2354,7 @@ ul.menu > li:first-child {
   padding-left: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 736px) {
   ul.actions:not(.fixed) {
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
@@ -2809,19 +2813,6 @@ body.is-ie .wrapper.fullscreen {
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
   opacity: 1;
-}
-.wrapper.fade-up > .inner .icons {
-  margin-left: 25px;
-}
-@media screen and (max-width: 1680px) {
-  .wrapper.fade-up > .inner .icons {
-    margin-left: 20px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .wrapper.fade-up > .inner .icons {
-    margin-left: 0;
-  }
 }
 .wrapper.fade-up > .inner [data-tooltip] {
   position: relative;
@@ -3353,6 +3344,35 @@ body.is-preload #sidebar nav ul li {
     display: none;
   }
 }
+#intro.wrapper > .inner {
+  margin: 0;
+  max-width: 25em;
+  text-align: center;
+}
+@media screen and (max-width: 736px) {
+  #intro.wrapper > .inner {
+    margin: auto;
+  }
+}
+#intro.wrapper > .inner ul {
+  padding: 0;
+}
+@media screen and (max-width: 736px) {
+  #intro.wrapper > .inner ul {
+    margin-bottom: 1em;
+  }
+}
+#intro.wrapper > .inner ul.actions {
+  margin-left: 0;
+  justify-content: center;
+}
+#intro.wrapper > .inner ul.actions li {
+  padding: 0;
+}
+#intro.wrapper > .inner ul.actions li .button {
+  width: 100%;
+}
+
 #intro {
   background-attachment: fixed;
   background-image: url("images/Confetti-Doodles.svg");
@@ -3360,14 +3380,15 @@ body.is-preload #sidebar nav ul li {
 }
 #intro p {
   color: #ffffff;
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
-
-@media screen and (max-width: 1280px) {
-  #intro .inner {
-    margin: unset;
+@media screen and (max-width: 736px) {
+  #intro p {
+    font-size: 1rem;
+    margin-bottom: 1em;
   }
 }
+
 @media screen and (max-width: 980px) {
   #intro p br {
     display: none;

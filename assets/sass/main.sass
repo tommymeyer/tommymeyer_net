@@ -2229,6 +2229,11 @@ dl
     margin-left: 2em
 
 // Actions
+.project-article
+  ul
+    &.actions
+      justify-content: center
+      padding: 1em
 
 ul
   &.actions
@@ -2239,7 +2244,6 @@ ul
     cursor: default
     list-style: none
     margin-left: -1em
-    padding-left: 0
 
     li
       padding: 0 0 0 1em
@@ -2333,7 +2337,7 @@ ul
         margin: 0
         padding-left: 0
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 736px)
   ul.actions:not(.fixed)
     -moz-flex-direction: column
     -webkit-flex-direction: column
@@ -2787,13 +2791,6 @@ body.is-ie .wrapper.fullscreen
     -ms-transition: opacity 1s ease, -ms-transform 1s ease
     transition: opacity 1s ease, transform 1s ease
     opacity: 1
-
-    .icons
-      margin-left: 25px
-      @media screen and (max-width: 1680px)
-        margin-left: 20px
-      @media screen and (max-width: 480px)
-        margin-left: 0
 
     [data-tooltip]
       position: relative
@@ -3316,20 +3313,32 @@ body.is-preload #sidebar
     display: none
 
 // Intro
+#intro.wrapper > .inner
+  margin: 0
+  max-width: 25em
+  text-align: center
+  @media screen and (max-width: 736px)
+    margin: auto
+  ul
+    padding: 0
+    @media screen and (max-width: 736px)
+      margin-bottom: 1em
+    &.actions
+      margin-left: 0
+      justify-content: center
+      li
+        padding: 0
 
 #intro
   background-attachment: fixed
   background-image: url("images/Confetti-Doodles.svg")
   background-color: #312450
-
   p
     color: #ffffff
-    font-size: 1.25em
-
-@media screen and (max-width: 1280px)
-  #intro
-    .inner
-      margin: unset
+    font-size: 1.25rem
+    @media screen and (max-width: 736px)
+      font-size: 1rem
+      margin-bottom: 1em
 
 @media screen and (max-width: 980px)
   #intro p br
