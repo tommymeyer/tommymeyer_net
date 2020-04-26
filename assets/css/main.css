@@ -101,26 +101,6 @@ body {
   font-weight: normal;
   line-height: 1.75;
 }
-body.is-preload * {
-  -moz-animation: none !important;
-  -webkit-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-  -moz-transition: none !important;
-  -webkit-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
-}
-body.is-preload *::before, body.is-preload *::after {
-  -moz-animation: none !important;
-  -webkit-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-  -moz-transition: none !important;
-  -webkit-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
-}
 
 input, select, textarea {
   color: rgba(255, 255, 255, 0.55);
@@ -3368,9 +3348,6 @@ body.is-preload #sidebar nav ul li {
 }
 #intro.wrapper > .inner ul.actions li {
   padding: 0;
-}
-#intro.wrapper > .inner ul.actions li .button {
-  width: 100%;
 }
 
 #intro {
