@@ -2180,10 +2180,6 @@ ol
 ul
   list-style: disc
   margin: 0 0 2em 0
-  padding-left: 1em
-
-  li
-    padding-left: 0.5em
 
   &.alt
     list-style: none
@@ -2223,10 +2219,10 @@ ul
     display: flex
     cursor: default
     list-style: none
-    margin-left: -1em
 
+    li + li
+      margin-left: 1em
     li
-      padding: 0 0 0 1em
       vertical-align: middle
 
     &.special
@@ -2528,7 +2524,7 @@ body.is-ie .spotlights > section
         width: 100%
 
     .content
-      padding: 4em 5em 2em 5em
+      padding: 4em 2em 2em 2em
       display: -moz-flex
       display: -webkit-flex
       display: -ms-flex
@@ -2584,10 +2580,6 @@ body.is-preload .spotlights > section > .image::before
   transform: translateX(-1em)
   opacity: 0
 
-@media screen and (max-width: 1680px)
-  .spotlights > section > .content
-    padding: 4em 3em 2em 3em
-
 @media screen and (max-width: 1280px)
   .spotlights > section > .content
     margin: auto
@@ -2603,7 +2595,12 @@ body.is-preload .spotlights > section > .image::before
         height: 50vh
 
       .content
+        padding: 4em 7em 2em 7em
+        text-align: center
         width: 100%
+        ul
+          &.actions
+            justify-content: center
 
     &.inactive > .content > .inner
       -moz-transform: translateY(1em)
@@ -2802,7 +2799,7 @@ body.is-ie .wrapper.fullscreen
         width: 0
         border-radius: 5px
         background-color: #000
-        background-color: rgba(109, 94, 174, 0.9)
+        background-color: rgba(109, 94, 174, 0.8)
         color: #fff
         content: attr(data-tooltip)
         text-align: center
@@ -3295,7 +3292,7 @@ body.is-preload #sidebar
 // Intro
 #intro.wrapper > .inner
   margin: 0
-  max-width: 25em
+  max-width: 30em
   text-align: center
   @media screen and (max-width: 736px)
     margin: auto
