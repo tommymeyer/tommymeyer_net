@@ -70,9 +70,9 @@ html {
   *::before, *::after {
     box-sizing: inherit; }
 
-.disabled-link {
-  pointer-events: none; }
-
+/****************** */
+/*****Variables**** */
+/****************** */
 body {
   background: #312450;
   color: rgba(255, 255, 255, 0.55);
@@ -1688,9 +1688,13 @@ ul.actions {
   display: -ms-flex;
   display: flex;
   cursor: default;
-  list-style: none; }
+  list-style: none;
+  justify-content: center; }
   ul.actions li + li {
     margin-left: 1em; }
+    @media screen and (max-width: 736px) {
+      ul.actions li + li {
+        margin-left: 0; } }
   ul.actions li {
     vertical-align: middle; }
   ul.actions.special {
@@ -1878,7 +1882,26 @@ header h4 + p, header h5 + p, header h6 + p {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  min-height: 22.5em; }
+  min-height: 22.5em;
+  justify-content: center;
+  width: 100%;
+  text-align: center; }
+  .spotlights > section.alt {
+    background-color: #261c3e; }
+  .spotlights > section.style1 {
+    background-color: #6a60a9; }
+  .spotlights > section.style1-alt {
+    background-color: #544b8b; }
+  .spotlights > section.style2 {
+    background-color: #5052b5; }
+  .spotlights > section.style2-alt {
+    background-color: #3e4094; }
+  .spotlights > section.style3 {
+    background-color: #85b4ff; }
+  .spotlights > section.style3-alt {
+    background-color: #953d75; }
+  .spotlights > section.style4 {
+    background-color: black; }
 
 body.is-ie .spotlights > section {
   min-height: 0; }
@@ -1919,7 +1942,7 @@ body.is-ie .spotlights > section {
     top: 0;
     width: 100%; }
 .spotlights > section > .content {
-  padding: 4em 2em 2em 2em;
+  padding: 0 2em;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -1932,7 +1955,6 @@ body.is-ie .spotlights > section {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  width: 30em;
   -ms-flex: 1; }
   .spotlights > section > .content > .inner {
     -moz-transform: translateX(0) translateY(0);
@@ -1944,6 +1966,8 @@ body.is-ie .spotlights > section {
     -ms-transition: opacity 1s ease, -ms-transform 1s ease;
     transition: opacity 1s ease, transform 1s ease;
     opacity: 1; }
+    .spotlights > section > .content > .inner p {
+      color: white; }
     .spotlights > section > .content > .inner a {
       border-bottom: none;
       display: inline-block; }
@@ -1953,10 +1977,6 @@ body.is-ie .spotlights > section {
         transition: border 300ms ease; }
         .spotlights > section > .content > .inner a > h2:hover {
           border-bottom: 2px solid white; }
-.spotlights > section:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.05); }
-.spotlights > section:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.1); }
 .spotlights > section.inactive > .image::before {
   opacity: 1; }
 
@@ -1975,22 +1995,16 @@ body.is-preload .spotlights > section > .image::before {
     margin: auto;
     max-width: 710px; } }
 @media screen and (max-width: 980px) {
-  .spotlights > section {
-    display: block; }
-    .spotlights > section > .image {
-      width: 100%;
-      height: 50vh; }
-    .spotlights > section > .content {
-      padding: 4em 7em 2em 7em;
-      text-align: center;
-      width: 100%; }
-      .spotlights > section > .content ul.actions {
-        justify-content: center; }
-    .spotlights > section.inactive > .content > .inner {
-      -moz-transform: translateY(1em);
-      -webkit-transform: translateY(1em);
-      -ms-transform: translateY(1em);
-      transform: translateY(1em); }
+  .spotlights > section > .image {
+    width: 100%;
+    height: 50vh; }
+  .spotlights > section > .content {
+    width: 100%; }
+  .spotlights > section.inactive > .content > .inner {
+    -moz-transform: translateY(1em);
+    -webkit-transform: translateY(1em);
+    -ms-transform: translateY(1em);
+    transform: translateY(1em); }
 
   body.is-preload .spotlights > section > .content > .inner {
     -moz-transform: translateY(1em);
@@ -2002,8 +2016,7 @@ body.is-preload .spotlights > section > .image::before {
     height: 50vh;
     min-height: 15em; }
   .spotlights > section > .content {
-    padding: 0 2em 1em 2em;
-    margin-top: calc(70vw - 50vh); } }
+    padding: 4em 2em; } }
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto; }
@@ -2045,7 +2058,12 @@ table {
       border-top: 0; }
 
 .wrapper {
+  display: flex;
+  justify-content: center;
   position: relative; }
+  @media screen and (max-width: 980px) {
+    .wrapper {
+      display: block; } }
   .wrapper > .inner {
     padding: 5em 5em 3em 5em;
     max-width: 100%;
@@ -2597,5 +2615,12 @@ body.is-preload #sidebar nav ul li {
       font-size: 1em; } }
 * {
   transition: all 500ms ease; }
+
+.small-text {
+  font-size: 0.75rem; }
+
+@media screen and (max-width: 736px) {
+  .projects-btn {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

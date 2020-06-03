@@ -22,7 +22,7 @@
           <nav>
             <ul>
               <li><a href="#intro">Hi there!</a></li>
-              <!-- <li><a href="#one">Projects</a></li> -->
+              <li><a href="#one">Projects</a></li>
               <!-- <li><a href="#two">Skills & Technologies</a></li> -->
               <li><a href="#three">Contact Me</a></li>
             </ul>
@@ -44,54 +44,106 @@
                 <li><a href="https://www.linkedin.com/in/tommymeyer942/" target="_blank" rel="noreferrer noopener" class="icon brands fa-linkedin-in" data-tooltip="LinkedIn"><span class="label">LinkedIn</span></a></li>
                 <li><a href="https://bit.ly/2AvjYid" target="_blank" rel="noreferrer noopener" class="icon brands fa-file-alt" data-tooltip="Resumé"><span class="label">Resumé</span></a></li>
               </ul>
-              <!-- <ul class="actions">
-                <li><a href="#one" class="button scrolly">Projects</a></li>
-              </ul> -->
+              <ul class="actions">
+                <li><a href="#one" class="button scrolly projects-btn">Projects</a></li>
+              </ul>
             </div>
           </section>
 
         <!-- One -->
-          <!-- <section id="one" class="wrapper style2 spotlights">
-            <section>
-              <img alt="Image of the Tuft &amp; Needle tracking page." class="image image-one" />
-              <div class="content">
-                <div class="inner">
-                  <a href="./projects/TrackingPage.html" target="_blank" rel="noreferrer noopener"><h2>Tuft & Needle Tracking Page</h2></a>
-                  <p>Tuft & Needle's custom tracking page. Made to provide customers with a more pleasant shipment tracking experience.</p>
-                  <ul class="actions">
-                    <li><a href="#" class="button disabled-link">Source Code</a></li>
-                    <li><a href="https://www.tuftandneedle.com/tracking/?email=tlmeyer942@gmail.com&slug=217e1e6a1ecc" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
-                  </ul>
+          <div id="one">
+            <section class="wrapper spotlights">
+              <section class="style3">
+                <div class="content">
+                  <div class="inner">
+                    <h2>List of SpaceX Launches</h2>
+                    <p>A list of SpaceX Launches using their API to display images of launches, launch names, launch details, and links to launch videos. <em>Coming soon: Information on SpaceX landing pads.</em></p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/spacex-launches-list" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://spacex-launches-list.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
+              </section>
+              <section class="style3-alt">
+                <div class="content">
+                  <div class="inner">
+                    <h2>Pomodoro Timer</h2>
+                    <p>A simple Pomodoro Timer that also tracks the number pomo sets you do. Built in ReactJS, it uses <code>useState</code> to adjust the timer, set counter, and the dynamic titles. It also uses <code>useRef</code> to make the buttons functional.</p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/react-pomodoro" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://pompom.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
             </section>
-            <section>
-              <img alt="Image of the Tuft &amp; Needle Stores site." class="image image-two" />
-              <div class="content">
-                <div class="inner">
-                  <a href="./projects/StoresSite.html" target="_blank" rel="noreferrer noopener"><h2>Tuft & Needle Stores Site</h2></a>
-                  <p>Tuft & Needle's Stores site. Made to help customers find products in a retail setting near them.</p>
-                  <ul class="actions">
-                    <li><a href="#" class="button disabled-link">Source Code</a></li>
-                    <li><a href="https://www.tuftandneedle.com/stores/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
-                  </ul>
+            <section class="wrapper spotlights">
+              <section class="style1-alt">
+                <div class="content">
+                  <div class="inner">
+                    <h2>Markdown Note Taking App</h2>
+                    <p>A <em>very</em> rudimentary Markdown note taking app built in ReactJS. It uses the <code>react-markdown</code> NPM Package and plugs in the <code>useState</code> React Hook to set the state of the textbox with what the user types in the editor.</p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/react-markdown-editor" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://voltnotes.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </section> -->
-            <!--<section>
-              <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-              <div class="content">
-                <div class="inner">
-                  <a href="#"><h2>Ultricies aliquam</h2></a>
-                  <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-                  <ul class="actions">
-                    <li><a href="generic.html" class="button">Learn more</a></li>
-                    <li><a href="generic.html" class="button">Learn more</a></li>
-                  </ul>
+              </section>
+              <section class="style1">
+                <div class="content">
+                  <div class="inner">
+                    <h2>Cool Tabs</h2>
+                    <p>Built in ReactJS, this is a sample of Navigation tabs and a neat hover interaction. It uses <code>react-router-dom</code> to navigate between the different components. The hover effect is accomplished using <code>useState</code> keep track of where the mouse is located when hovering over a tab. This is also an example of the power of React to componentize elements in order to prevent duplication.</p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/react-tabs" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://cool-tabs.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </section> -->
-          </section>
+              </section>
+            </section>
+            <section class="wrapper spotlights">
+              <section class="style2">
+                <div class="content">
+                  <div class="inner">
+                    <a href="./projects/StoresSite.html" target="_blank" rel="noreferrer noopener"><h2>Tuft & Needle Stores Site</h2></a>
+                    <p>Tuft & Needle's Stores site. Made to help customers find products in a retail setting near them.</p>
+                    <ul class="actions">
+                      <li><a href="https://www.tuftandneedle.com/stores/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section class="style2-alt">
+                <div class="content">
+                  <div class="inner">
+                    <a href="./projects/TrackingPage.html" target="_blank" rel="noreferrer noopener"><h2>Tuft & Needle Tracking Page</h2></a>
+                    <p>Tuft & Needle's custom tracking page. Made to provide customers with a more pleasant shipment tracking experience.</p>
+                    <ul class="actions">
+                      <li><a href="https://www.tuftandneedle.com/tracking/?email=tlmeyer942@gmail.com&slug=217e1e6a1ecc" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <section class="wrapper spotlights">
+              <section class="style4">
+                <div class="content">
+                  <div class="inner">
+                    <h2>More Coming Soon</h2>
+                    <p>To see more examples of my CSS work check out my Codepen. For more examples of larger projects, check out my Github or my Resumé.<span class="small-text">&#40;all links found in the icons above or the buttons below&#41;</span>.</p>
+                    <ul class="actions">
+                      <li><a href="https://codepen.io/tommymeyer" target="_blank" rel="noreferrer noopener" class="button icon fa-codepen">Codepen</a></li>
+                      <li><a href="" class="button icon fa-github" target="_blank" rel="noreferrer noopener">Github</a></li>
+                      <li><a href="" class="button icon fa-file-alt" target="_blank" rel="noreferrer noopener">Resumé</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </div>
 
         <!-- Two -->
           <!-- <section id="two" class="wrapper style3 fade-up">

@@ -88,14 +88,17 @@ html
 
 
 
-
-// Variables
+/*******************/
+/*****Variables*****/
+/*******************/
+// Colors
 $purple: #312450
 $blue: #85b4ff
 $yellow: #ffd882
 $green: #90EE90
 $lite-purple: #6d5eae
 
+// Fonts
 $righteous: 'Righteous', cursive
 $kelly: 'Kelly Slab', cursive
 $poppins: 'Poppins', sans-serif
@@ -106,12 +109,6 @@ $bevan: 'Bevan', cursive
 $spicy-rice: 'Spicy Rice', cursive
 $biorhyme: 'BioRhyme', serif
 $cherry: 'Cherry Swash', cursive
-
-
-
-
-.disabled-link
-  pointer-events: none
 
 
 body
@@ -2219,9 +2216,12 @@ ul
     display: flex
     cursor: default
     list-style: none
+    justify-content: center
 
     li + li
       margin-left: 1em
+      @media screen and ( max-width: 736px)
+        margin-left: 0
     li
       vertical-align: middle
 
@@ -2470,16 +2470,42 @@ header
 
 // Spotlights
 
-.spotlights > section
-  display: -moz-flex
-  display: -webkit-flex
-  display: -ms-flex
-  display: flex
-  -moz-flex-direction: row
-  -webkit-flex-direction: row
-  -ms-flex-direction: row
-  flex-direction: row
-  min-height: 22.5em
+.spotlights
+  > section
+    display: -moz-flex
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    -moz-flex-direction: row
+    -webkit-flex-direction: row
+    -ms-flex-direction: row
+    flex-direction: row
+    min-height: 22.5em
+    justify-content: center
+    width: 100%
+    text-align: center
+    &.alt
+      background-color: #261c3e
+
+    &.style1
+      background-color: #6a60a9
+
+    &.style1-alt
+      background-color: #544b8b
+
+    &.style2
+      background-color: #5052b5
+
+    &.style2-alt
+      background-color: #3e4094
+
+    &.style3
+      background-color: #85b4ff
+
+    &.style3-alt
+      background-color: #953d75
+    &.style4
+      background-color: black
 
 body.is-ie .spotlights > section
   min-height: 0
@@ -2524,7 +2550,7 @@ body.is-ie .spotlights > section
         width: 100%
 
     .content
-      padding: 4em 2em 2em 2em
+      padding: 0 2em
       display: -moz-flex
       display: -webkit-flex
       display: -ms-flex
@@ -2537,7 +2563,6 @@ body.is-ie .spotlights > section
       -webkit-justify-content: center
       -ms-justify-content: center
       justify-content: center
-      width: 30em
       -ms-flex: 1
 
       > .inner
@@ -2550,6 +2575,8 @@ body.is-ie .spotlights > section
         -ms-transition: opacity 1s ease, -ms-transform 1s ease
         transition: opacity 1s ease, transform 1s ease
         opacity: 1
+        p
+          color: white
         a
           border-bottom: none
           display: inline-block
@@ -2560,12 +2587,6 @@ body.is-ie .spotlights > section
               transition: border 300ms ease
               &:hover
                 border-bottom: 2px solid white
-
-  &:nth-child(2)
-    background-color: rgba(0, 0, 0, 0.05)
-
-  &:nth-child(3)
-    background-color: rgba(0, 0, 0, 0.1)
 
   &.inactive > .image::before
     opacity: 1
@@ -2587,7 +2608,6 @@ body.is-preload .spotlights > section > .image::before
 
 @media screen and (max-width: 980px)
   .spotlights > section
-    display: block
 
     >
       .image
@@ -2595,12 +2615,7 @@ body.is-preload .spotlights > section > .image::before
         height: 50vh
 
       .content
-        padding: 4em 7em 2em 7em
-        text-align: center
         width: 100%
-        ul
-          &.actions
-            justify-content: center
 
     &.inactive > .content > .inner
       -moz-transform: translateY(1em)
@@ -2621,8 +2636,7 @@ body.is-preload .spotlights > section > .image::before
       min-height: 15em
 
     .content
-      padding: 0 2em 1em 2em
-      margin-top: calc(70vw - 50vh)
+      padding: 4em 2em
 
 // Table
 
@@ -2682,7 +2696,11 @@ table
 // Wrapper
 
 .wrapper
+  display: flex
+  justify-content: center
   position: relative
+  @media screen and ( max-width: 980px)
+    display: block
 
   > .inner
     padding: 5em 5em 3em 5em
@@ -3331,3 +3349,10 @@ body.is-preload #sidebar
 
 *
   transition: all 500ms ease
+
+.small-text
+  font-size: 0.75rem
+
+.projects-btn
+  @media screen and ( max-width: 736px)
+    display: none
