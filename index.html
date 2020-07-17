@@ -4,11 +4,11 @@
   html5up.net | @ajlkn
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-  Customized by Tommy Meyer
+  Heavily customized by Tommy Meyer, 2020.
 -->
 <html>
   <head>
-    <title>Tommy Meyer – Front-End Developer</title>
+    <title>⚡ Tommy Meyer – Front-End Developer</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -53,19 +53,46 @@
         <!-- One -->
           <div id="one">
             <section class="wrapper spotlights">
-              <section class="style3">
+              <section class="style1">
                 <div class="content">
                   <div class="inner">
-                    <h2>List of SpaceX Launches</h2>
-                    <p>A list of SpaceX Launches using their API to display images of launches, launch names, launch details, and links to launch videos.</p>
+                    <h2>Rock.Paper.Scissors.</h2>
+                    <p>This is a simple, Browser-based Roshambo game that pits the user against the computer <i><b>*cough*</b> Math.random() <b>*cough*</b></i>. It tracks wins, losses, the user's choice, the computer's choice, and game state using the <code>useState</code> Hook. The game state refreshes with the <code>useEffect</code> Hook. I use conditional logic that uses properties of the different choices available; namely, rock, paper, and scissors.</p>
                     <ul class="actions">
-                      <li><a href="https://github.com/tommymeyer/spacex-launches-list" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
-                      <li><a href="https://spacex-launches-list.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                      <li><a href="https://github.com/tommymeyer/react-roshambo" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://react-roshambo.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
                     </ul>
                   </div>
                 </div>
               </section>
-              <section class="style3-alt">
+            </section>
+            <section class="wrapper spotlights">
+              <section class="style2">
+                <div class="content">
+                  <div class="inner">
+                    <h2>Infinite Image Gallery</h2>
+                    <p>This app uses the <a href="https://unsplash.com/developers" target="_blank" rel="noreferrer noopener">Unsplash API</a> to dynamically load images. It uses a package called the <code>react-infinite-scroll-component</code> to continuously load images on scroll. This project was a bit of stretch for me in using the <code>useCallback</code> Hook for performance improvements as well as using the <code>useEffect</code> Hook to negotiate multiple and semi-complex state scenarios.</p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/infinite-images" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section class="style2-alt">
+                <div class="content">
+                  <div class="inner">
+                    <h2>Robofriends</h2>
+                    <p>This app displays the power of React Props and State. I'm using <code>useState</code> to obtain and set the searchfield value, and, subsequently, actively find and display relevant information cards. I'm also using the <code>fetch API</code> within <code>useEffect</code> to call for data to display on the information cards. This project was a refactor of an older project. I replaced Life Cycle Methods with React Hooks.</p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/robofriends" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://tin-can.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <section class="wrapper spotlights">
+              <section class="style3">
                 <div class="content">
                   <div class="inner">
                     <h2>Pomodoro Timer</h2>
@@ -77,9 +104,7 @@
                   </div>
                 </div>
               </section>
-            </section>
-            <section class="wrapper spotlights">
-              <section class="style1-alt">
+              <section class="style3-alt">
                 <div class="content">
                   <div class="inner">
                     <h2>Markdown Note Taking App</h2>
@@ -91,7 +116,9 @@
                   </div>
                 </div>
               </section>
-              <section class="style1">
+            </section>
+            <section class="wrapper spotlights">
+              <section class="style1-alt">
                 <div class="content">
                   <div class="inner">
                     <h2>Cool Tabs</h2>
@@ -99,6 +126,18 @@
                     <ul class="actions">
                       <li><a href="https://github.com/tommymeyer/react-tabs" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
                       <li><a href="https://cool-tabs.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section class="style1">
+                <div class="content">
+                  <div class="inner">
+                    <h2>List of SpaceX Launches</h2>
+                    <p>A list of SpaceX Launches using their API to display images of launches, launch names, launch details, and links to launch videos.</p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/spacex-launches-list" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://spacex-launches-list.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
                     </ul>
                   </div>
                 </div>
@@ -225,7 +264,7 @@
       <footer id="footer" class="wrapper style1-alt">
         <div class="inner">
           <ul class="menu">
-            <li>&copy; 2020 Tommy Meyer. All rights reserved.</li>
+            <li>&copy; 2020 <a href="https://bit.ly/2AvjYid" target="_blank" rel="noreferrer noopener">Tommy Meyer</a>. All rights reserved.</li>
           </ul>
         </div>
       </footer>
