@@ -53,6 +53,20 @@
         <!-- One -->
           <div id="one">
             <section class="wrapper spotlights">
+              <section class="style3">
+                <div class="content">
+                  <div class="inner">
+                    <h2>CarHub</h2>
+                    <p>Utilizing NextJS 13 with SSR, ReactJS, Typescript, and Tailwind CSS.</p>
+                    <ul class="actions">
+                      <li><a href="https://github.com/tommymeyer/next-carport" target="_blank" rel="noreferrer noopener" class="button">Source Code</a></li>
+                      <li><a href="https://next-carhub.netlify.app/" class="button" target="_blank" rel="noreferrer noopener">Live Example</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <section class="wrapper spotlights">
               <section class="style1-alt">
                 <div class="content">
                   <div class="inner">
@@ -288,7 +302,7 @@
       <footer id="footer" class="wrapper style1-alt">
         <div class="inner">
           <ul class="menu">
-            <li>&copy; 2021 <a href="https://bit.ly/2AvjYid" target="_blank" rel="noreferrer noopener">Tommy Meyer</a>. All rights reserved.</li>
+            <li>&copy; <span id="year"></span> <a href="https://bit.ly/2AvjYid" target="_blank" rel="noreferrer noopener">Tommy Meyer</a>. All rights reserved.</li>
           </ul>
         </div>
       </footer>
@@ -301,6 +315,8 @@
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
-
+      <script>
+        document.querySelector("#year").textContent = new Date().getFullYear();
+      </script>
   </body>
 </html>

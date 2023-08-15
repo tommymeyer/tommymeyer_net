@@ -1068,6 +1068,13 @@ button, .button {
   button:hover, .button:hover {
     color: #ffffff;
     box-shadow: 0px 0px 15px 2px #85b4ff, 0px 0px 15px 2px #85b4ff; }
+  .style3 button, .style3 .button {
+    border-color: rgba(62, 64, 148, 1) !important;
+  }
+  .style3 button:hover, .style3 .button:hover {
+    color: #ffffff;
+    box-shadow: 0px 0px 15px 2px #3e4094, 0px 0px 15px 2px #3e4094;
+  }
 
 input[type=submit]::after, input[type=reset]::after, input[type=button]::after {
   -moz-transform: scale(0.25);
@@ -1942,6 +1949,8 @@ body.is-ie .spotlights > section {
     top: 0;
     width: 100%; }
 .spotlights > section > .content {
+  align-items: center;
+  display: flex;
   padding: 2em; }
   .spotlights > section > .content > .inner {
     -moz-transform: translateX(0) translateY(0);
@@ -1955,6 +1964,11 @@ body.is-ie .spotlights > section {
     opacity: 1; }
     .spotlights > section > .content > .inner p {
       color: white; }
+    .spotlights > .style3 > .content > .inner h2,
+    .spotlights > .style3 > .content > .inner p,
+    .spotlights > .style3 > .content > .inner a {
+      color: #3e4094;
+    }
     .spotlights > section > .content > .inner a {
       border-bottom: none;
       display: inline-block; }
