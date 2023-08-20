@@ -1951,6 +1951,7 @@ body.is-ie .spotlights > section {
 .spotlights > section > .content {
   align-items: center;
   display: flex;
+  justify-content: center;
   padding: 2em; }
   .spotlights > section > .content > .inner {
     -moz-transform: translateX(0) translateY(0);
